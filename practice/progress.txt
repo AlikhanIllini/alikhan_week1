@@ -33,3 +33,5 @@ Description: "Pulled and merged the change made on the website."
 
 Que 12 - touch rough.txt && echo "ignored test" >> rough.txt - progress.txt edited on: local machine - command ran on: local machine
 Description: "Created rough.txt to verify .gitignore (file remains untracked/ignored)."
+
+Website edit: added this line from GitHub UI.
