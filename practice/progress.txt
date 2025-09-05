@@ -1,0 +1,93 @@
+# Steps before first push
+
+Que 1 - git clone <repo-url> - progress.txt edited on: local machine - command ran on: local machine
+Description: "Cloned the empty public repository from GitHub to my local machine and cd’d into it."
+
+Que 2 - mkdir practice - progress.txt edited on: local machine - command ran on: local machine
+Description: "Created the 'practice' folder required by the assignment in the repo root."
+
+Que 3 - touch practice/progress.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Created the progress.txt file inside the 'practice' folder to document every step."
+
+Que 4 - Create .gitignore - progress.txt edited on: local machine - command ran on: local machine
+Description: "Added a .gitignore with Python, Conda/venv, macOS, IDE junk, and a local rough.txt to keep the repo clean."
+
+Que 5 - git status - progress.txt edited on: local machine - command ran on: local machine
+Description: "Checked the working tree to see untracked files before staging."
+
+Que 6 - git add . - progress.txt edited on: local machine - command ran on: local machine
+Description: "Staged the newly created files and folders."
+
+Que 7 - git commit -m "Step 1: initial structure (.gitignore + practice/progress.txt)" - progress.txt edited on: local machine - command ran on: local machine
+Description: "Committed the initial project structure and documentation file."
+
+Que 8 - git push -u origin main - progress.txt edited on: local machine - command ran on: local machine
+Description: "Pushed the initial commit to GitHub and set upstream to origin/main."
+
+# Steps after first push
+
+Que 9 - echo "Hello from local" >> practice/progress.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Appended a test line to progress.txt to demonstrate local edit + push."
+
+Que 10 - git add practice/progress.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Staged the updated progress.txt."
+
+Que 11 - git commit -m "Step 2: appended a test line locally" - progress.txt edited on: local machine - command ran on: local machine
+Description: "Committed the local change to progress.txt."
+
+Que 12 - git push - progress.txt edited on: local machine - command ran on: local machine
+Description: "Pushed the local change to GitHub."
+
+Que 13 - Edited progress.txt directly on GitHub (added: 'Hello from website') - progress.txt edited on: GitHub website - command ran on: GitHub website
+Description: "Opened GitHub UI, edited progress.txt inline in the web editor, and committed on the website to create a remote change."
+
+Que 14 - git fetch origin - progress.txt edited on: local machine - command ran on: local machine
+Description: "Fetched remote changes from origin without merging to show the difference between fetch and pull."
+
+Que 15 - git diff origin/main -- practice/progress.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Viewed diffs between my local file and the remote main branch (to see the GitHub web edit)."
+
+Que 16 - git pull origin main - progress.txt edited on: local machine - command ran on: local machine
+Description: "Pulled and merged the change made on the GitHub website."
+
+Que 17 - touch rough.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Created rough.txt to demonstrate .gitignore in action (file should be ignored)."
+
+Que 18 - git status - progress.txt edited on: local machine - command ran on: local machine
+Description: "Verified that rough.txt is NOT tracked due to .gitignore entry."
+
+Que 19 - echo "This should stay untracked" >> rough.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Wrote to rough.txt, still expecting it to be untracked (ignored)."
+
+Que 20 - git add practice/progress.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Only staged progress.txt because rough.txt is ignored."
+
+Que 21 - git commit -m "Step 3: verified .gitignore behavior with rough.txt" - progress.txt edited on: local machine - command ran on: local machine
+Description: "Committed the explanation of .gitignore behavior."
+
+Que 22 - git push - progress.txt edited on: local machine - command ran on: local machine
+Description: "Pushed the .gitignore verification step."
+
+Que 23 - mkdir notes - progress.txt edited on: local machine - command ran on: local machine
+Description: "Created another folder 'notes' to demonstrate tracking new content."
+
+Que 24 - echo "Week 1 notes start" > notes/notes.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Added a starter notes file."
+
+Que 25 - git add notes/notes.txt - progress.txt edited on: local machine - command ran on: local machine
+Description: "Staged the new notes file."
+
+Que 26 - git commit -m "Step 4: add notes folder with notes.txt" - progress.txt edited on: local machine - command ran on: local machine
+Description: "Committed the new notes folder and file."
+
+Que 27 - git push - progress.txt edited on: local machine - command ran on: local machine
+Description: "Pushed the new notes to GitHub."
+
+Que 28 - git log --oneline -n 5 - progress.txt edited on: local machine - command ran on: local machine
+Description: "Viewed the last 5 commits in a concise format."
+
+Que 29 - git status - progress.txt edited on: local machine - command ran on: local machine
+Description: "Confirmed clean working tree after pushes."
+
+Que 30 - Summary note - progress.txt edited on: local machine - command ran on: local machine
+Description: "Completed all required actions: structure set up, every command documented before running, immediate push after each step, demonstrated GitHub website edit + local fetch/diff/pull, and configured .gitignore for Python/Conda/macOS/IDE junk + rough.txt."
